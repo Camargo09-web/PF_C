@@ -172,8 +172,9 @@
             .footer{
                 padding: 20px;
                 text-align: center;
-                background: #ddd;
+                background: white;
                 margin-top: 20px;
+                border: 1px solid #ddd;
             }
             
             /*Responsive layout- when the screen is less that 800px wide, make the two columns stack on top of each other instead of next to each other*/
@@ -208,8 +209,8 @@
         
         <div class="topnav">
             <a href="#home">Home</a>
-            <a href="#Dama">Dama</a>
-            <a href="#Caballero">Caballero</a>
+            <a href="#dama">Dama</a>
+            <a href="#caballero">Caballero</a>
             
         </div>
         
@@ -248,10 +249,9 @@
         
         
    
-        <div id= "about" class="section">
+        <div id= "dama" class="section">
              <div class="leftcolumn">
         <div class="card clearfix">
-            <h2>Catálogo</h2>
             
             <div class="producto-container">
                 <div class="producto">
@@ -298,7 +298,7 @@
                 <div class="producto">
                     <a href=PONER UNO>
                         <div>
-                        <p>Short</p>
+                        <p>Shorts</p>
                         </div>
                     </a>
                 </div>
@@ -323,49 +323,61 @@
         
         
         
-        <div id= "contact" class="section">
+        <div id= "caballero" class="section">
             <div class="contacto-contenedor">
-                <h2>Contacto</h2>
-                <p>Envíanos un correo a <a href="mailto:contacto@gbotas.com">contacto@gbotas.com.mx</a> o si prefieres completa el formulario</p>
-                
-                <form action="#" method= "post">
-                    <div class="contenedor-formulario">
-                        <div class="campos-formulario">
-                            <label for= "nombre"></label>
-                            <input id= "nombre" name= "nombre" type= "text" placeholder="NOMBRE COMPLETO" required>
-                            
-                            
-                            <label for= "email"></label>
-                            <input id= "email" name="email" type= "email" placeholder="COREO ELECTRÓNICO" required>
-                            
-                            
-                            <label for= "telefono"></label>
-                            <input id= "telefono" name= "telefono" type= "tel" placeholder="TELÉFONO" required>
-                            
-                            <label for= "subject"></label>
-                            <input id= "subject" name= "subject" type="text" placeholder="ASUNTO" required>
-                            
-                            <label for="message"></label>
-                            <textarea id="message" name= "message" placeholder="MENSAJE" required></textarea>
-                            
-                            
-                            <input type="submit" value="Enviar">
-                        
-                        
+                            <div class="producto-container">
+                <div class="producto">
+                    <a href="#caballero">
+                        <div>
+                            <p>Camisas</p>
                         </div>
-                    
-                    </div>
-                
-                </form>
-            
+                    </a>
+                </div>
+            </div>
+
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                        <p>Pantalones</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             
             
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                            <p>Shorts</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                        <p>Accesorios</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
         </div>
-    
+    </div>
+
         
         <div class="footer">
-            <h2>Footer</h2>
+            <img src="img/Logo.jpeg" alt="Logo" style="width:100px;">
+            <p>© 2024 El gato con botas. Todos los derechos reservados.</p>
+            
+            <p>Contacto: <a href="mailto:contacto@gmail.com.mx">contacto@gbotas.com.mx</a></p>
+            <p>Teléfono: 2292676085</p>
         </div>
         
     </body>
