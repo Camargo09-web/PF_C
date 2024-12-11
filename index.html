@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El gato con botas</title>
+        <link rel="icon" type="img/x-icon" href="img/favicon.ico">
+        
+        
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            
+            body{
+                font-family: Arial;
+                padding: 10px;
+                background: white;
+            }
+            
+            /*Header/blog title*/
+            .header{
+                padding: 30px;
+                text-align: center;
+                background: white;
+            }
+            
+            .header h1{
+                font-size: 50px;
+            }
+            
+            /*Style the top navigation bar*/
+            .topnav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+            
+            /*Style the topnav links*/
+            .topnav a{
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                margin-right: 100px;
+                
+            }
+            
+            /*Change color on hover*/
+            .topnav a:hover{
+                background-color: #ddd;
+                color:black;
+            }
+            
+            
+            .section{
+                display: none;
+                padding: 20px;
+                background-color: white;
+                margin-top: 20px;
+                border-radius: 5px;
+            }
+            
+            :target{
+                display: block;
+            }
+            
+            body:not(:has(:target)) #dama {
+                display: block;
+            }
+            
+            /*Sección de home*/
+            
+            
+            
+            .producto{
+                border: 1px solid #ddd;
+                background-color: white;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            
+            .producto:hover{
+                border: 1px solid #ddd;
+            }
+            
+            
+            .producto img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            
+            .producto a{
+                display: block;
+                background-color: black;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                
+            }
+            
+            .producto a:hover{
+                background-color: #B08D57;
+                color: white;
+            }
+            
+            .descripcion{
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .producto-container{
+                display: inline-block;
+                width: 45%;
+                margin: 10px 2%;
+                text-align: center;
+            }
+            
+            @media only screen and(max-width: 700px){
+                .producto-container{
+                    width: 90%;
+                }
+            }
+            
+            @media only screen and(max-width: 500px){
+                .producto-container{
+                    width: 100%;
+                    
+                }
+            }
+            
+            .clearfix:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+         
+            /*Left column*/
+             #home .leftcolumn{
+                 width: 80%;
+                 margin: 0 auto;
+                 padding: 20px;
+            }
+            
+            
+            
+            /*Add a card effect for articles*/
+            .card{
+                margin 0 auto;
+                width: 100%
+            }
+            
+            .card h2{
+                text-align: center;
+                color: white;
+                background-color: black;
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                font-size: 28px;
+                margin-bottom: 20px;
+                
+            }
+        
+            
+            /*Footer*/
+            .footer{
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+            }
+            
+            /*Responsive layout- when the screen is less that 800px wide, make the two columns stack on top of each other instead of next to each other*/
+            @media screen and(max-width: 800px){
+                .leftcolumn{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            
+            /*Responsive layout- when the screen is less that 400px wide, make the navigation links stack on top of each other instead of next to each other*/
+            @media screen and(max-width: 400px){
+                .topnav a {
+                    width: 100%;
+                    text-align: center
+                }
+            }
+            
+            
+     
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+    <div class="header">
+        <h1>El gato con botas</h1>
+        <p>Tu estilo, tu voz. No dejes que nadie lo imponga.</p>
+        </div>
+        
+        <div class="topnav">
+            <a href="#home">Home</a>
+            <a href="#Dama">Dama</a>
+            <a href="#Caballero">Caballero</a>
+            
+        </div>
+        
+        
+        <div id="home" class="section">
+            <div class="leftcolumn">
+                <div class="card clearfix">
+                    <h2>Catálogo</h2>
+                    
+                    <div class="producto-container">
+                        <div class="producto">
+                            <a href="DIRECCIÓN URL">
+                                <div>
+                                    <img src="img/Mujer.jpg" alt="Mujer" width="600" height="400">
+                                    <p>Dama</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-container">
+                        <div class="producto">
+                            <a href=PONER UNO>
+                                <div>
+                                    <img src="img/Hombre.jpg" alt="Caballero" width="600" height="400">
+                                    <p>Caballero</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+   
+        <div id= "about" class="section">
+             <div class="leftcolumn">
+        <div class="card clearfix">
+            <h2>Catálogo</h2>
+            
+            <div class="producto-container">
+                <div class="producto">
+                    <a href="DIRECCIÓN URL">
+                        <div>
+                            <p>Vestidos</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                        <p>Pantalones</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                            <p>Blusas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                        <p>Faldas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                        <p>Short</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="producto-container">
+                <div class="producto">
+                    <a href=PONER UNO>
+                        <div>
+                        <p>Accesorios</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+        
+        
+        
+        
+        
+        
+        <div id= "contact" class="section">
+            <div class="contacto-contenedor">
+                <h2>Contacto</h2>
+                <p>Envíanos un correo a <a href="mailto:contacto@gbotas.com">contacto@gbotas.com.mx</a> o si prefieres completa el formulario</p>
+                
+                <form action="#" method= "post">
+                    <div class="contenedor-formulario">
+                        <div class="campos-formulario">
+                            <label for= "nombre"></label>
+                            <input id= "nombre" name= "nombre" type= "text" placeholder="NOMBRE COMPLETO" required>
+                            
+                            
+                            <label for= "email"></label>
+                            <input id= "email" name="email" type= "email" placeholder="COREO ELECTRÓNICO" required>
+                            
+                            
+                            <label for= "telefono"></label>
+                            <input id= "telefono" name= "telefono" type= "tel" placeholder="TELÉFONO" required>
+                            
+                            <label for= "subject"></label>
+                            <input id= "subject" name= "subject" type="text" placeholder="ASUNTO" required>
+                            
+                            <label for="message"></label>
+                            <textarea id="message" name= "message" placeholder="MENSAJE" required></textarea>
+                            
+                            
+                            <input type="submit" value="Enviar">
+                        
+                        
+                        </div>
+                    
+                    </div>
+                
+                </form>
+            
+            </div>
+            
+            
+        </div>
+    
+        
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+        
+    </body>
+    
+</html>
